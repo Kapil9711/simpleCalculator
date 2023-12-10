@@ -1,0 +1,8 @@
+.btn{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    &-black{
+        background-color: $color-black-light;
+    }
+}

@@ -1,0 +1,13 @@
+.main-container{
+    &__input-box{
+        background-color: $color-black-normal;
+        width: 100%;
+        height: $input-box-width;
+        padding: 2rem;
+        font-size: 6rem;
+        font-family: 'mukta';
+        font-weight: 800;
+        color: $color-white;  
+    
+    }
+}

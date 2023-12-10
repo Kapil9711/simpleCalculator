@@ -1,0 +1,22 @@
+.row{
+    width: 100%;
+    margin-bottom: $grid-gutter-width;
+    display: flex;
+    & .col-1-of-4{
+        display: inline-block;
+        width: calc((100% - #{$grid-gutter-width}*4) /4 );
+        background-color: $color-black-light;
+        // height: 9.5rem;
+        display: flex;
+        
+        border-radius: 100%;
+        justify-content: center;
+
+        &:not(:last-child){
+            margin-right: $grid-gutter-width;
+        }
+        
+    }
+    
+
+}

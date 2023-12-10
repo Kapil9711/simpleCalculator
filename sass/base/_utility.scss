@@ -1,0 +1,24 @@
+.u-text-center{
+    transition: all .1s ease;
+    & p {
+        font-size: 6rem;
+        font-family: 'mukta';
+        font-weight: 800;
+        color: $color-white;
+    }
+
+    &.u-color-orange{
+        background-color: $color-btn-primary;
+
+        &:hover{
+            background-color: $color-btn-seconday;
+        }
+     }
+    &:hover{
+        background-color: $color-black-extra-light;
+        transform: translateY(-2px) scale(1.05);
+    }
+    &:active{
+        transform: translateY(-1px);
+    }
+}
