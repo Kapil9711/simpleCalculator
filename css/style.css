@@ -90,6 +90,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 49%; }
+    font-size: 50%; }
   .row {
     margin-bottom: 2.5rem; } }
