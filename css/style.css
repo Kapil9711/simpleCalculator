@@ -34,7 +34,7 @@ body {
   .main-container__btn-box {
     background-color: #232222;
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding: 3rem 2rem 0; }
 
 @media only screen and (max-width: 600px) {
@@ -87,6 +87,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 65%; }
+    font-size: 75%; }
   .row {
-    margin-bottom: 5rem; } }
+    margin-bottom: 2.5rem; } }
