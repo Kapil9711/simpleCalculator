@@ -123,7 +123,7 @@ window.addEventListener("resize", function () {
     width = button[0].clientWidth;
     button.forEach((ele) => {
         ele.setAttribute("style", `height:${width}px`);
-        console.log(width);
+       
     });
    
 });
@@ -172,9 +172,11 @@ const calculator = function(){
     let newTextValueList1 = [];
     let newEle = "";
     textVlaueList.forEach((ele, i, arr) => {
-        if (Number(ele)) {
+        if (Number(ele) || ele === "0") {
+            
+          
             newEle = newEle + ele;
-            if (Number(arr[i + 1])) {
+            if (Number(arr[i + 1]) || arr[i+1] ==="0") {
                 
             } else {
                 newTextValueList1.push(newEle);
@@ -186,9 +188,15 @@ const calculator = function(){
         }
     });
 
-    console.log(newTextValueList1);
+    
    let newTextValueList =  newTextValueList1.map((ele, index, aar) => {
-       return (Number(ele)) ? Number(ele) : ele;
+       if (Number(ele)) {
+           return Number(ele);
+       } else if (ele === "0") {
+           return 0;
+       } else {
+           return ele;
+       }
    });
     let result = 0;
     newTextValueList.forEach((ele,index,arr) => {
@@ -209,6 +217,6 @@ const calculator = function(){
             arr[index+1] = result;
         }
     });
-    console.log(newTextValueList)
+    
     return newTextValueList[newTextValueList.length - 1];
 }
