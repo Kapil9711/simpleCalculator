@@ -45,7 +45,9 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    transform: translateX(0) translateY(0); } }
+    transform: translateX(0) translateY(0); }
+    .main-container__btn-box {
+      padding: 3.5rem .5rem 0; } }
 
 .btn {
   width: 6rem;
@@ -87,6 +89,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 75%; }
+    font-size: 60%; }
   .row {
     margin-bottom: 2.5rem; } }
