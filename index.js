@@ -172,11 +172,11 @@ const calculator = function(){
     let newTextValueList1 = [];
     let newEle = "";
     textVlaueList.forEach((ele, i, arr) => {
-        if (Number(ele) || ele === "0") {
+        if (Number(ele) || ele === "0" || ele===".") {
             
           
             newEle = newEle + ele;
-            if (Number(arr[i + 1]) || arr[i+1] ==="0") {
+            if (Number(arr[i + 1]) || arr[i+1] ==="0" || arr[i+1]===".") {
                 
             } else {
                 newTextValueList1.push(newEle);
@@ -187,14 +187,14 @@ const calculator = function(){
             newTextValueList1.push(ele);
         }
     });
-
+    console.log(newTextValueList1);
     
    let newTextValueList =  newTextValueList1.map((ele, index, aar) => {
        if (Number(ele)) {
            return Number(ele);
-       } else if (ele === "0") {
-           return 0;
-       } else {
+       }
+       
+       else {
            return ele;
        }
    });
