@@ -41,9 +41,8 @@ body {
   body {
     background-color: lightblue; }
   .main-container {
-    bottom: 5%;
-    height: 73%;
-    width: 90%; } }
+    height: 90%;
+    width: 100%; } }
 
 .btn {
   width: 6rem;
